@@ -1,0 +1,46 @@
+// =============================================
+// VARIABLES - Paleta de colores e identidad
+// =============================================
+
+// Colores principales
+$color-primary: #8B4513;       // Marron tierra (evoca lo rustico/norteno)
+$color-secondary: #D2691E;     // Chocolate
+$color-accent: #DAA520;        // Dorado (acento elegante)
+$color-dark: #2C1810;          // Marron muy oscuro
+$color-light: #FDF5E6;         // Crema claro (fondo)
+$color-white: #FFFFFF;
+$color-text: #3A2A1A;          // Texto principal
+$color-text-light: #6B5B4B;   // Texto secundario
+$color-bg-section: #FAF0E6;   // Fondo secciones alternas
+
+// Tipografia
+$font-heading: 'Georgia', serif;
+$font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Espaciado
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 5rem;
+
+// Border radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 20px;
+
+// Sombras
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

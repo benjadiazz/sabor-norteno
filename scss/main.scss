@@ -1,0 +1,28 @@
+// =============================================
+// MAIN.SCSS - Archivo principal que importa todo
+// =============================================
+// Proyecto: Sabor Norteno - Restaurante
+// Autor: Elias Benjamin Diaz Ale
+// Curso: Desarrollo Web Flex - Coderhouse
+// =============================================
+
+// 1. Variables (colores, tipografia, espaciado)
+@import 'variables';
+
+// 2. Mixins reutilizables
+@import 'mixins';
+
+// 3. Base (reset, estilos globales, animaciones)
+@import 'base';
+
+// 4. Header (navbar)
+@import 'header';
+
+// 5. Footer
+@import 'footer';
+
+// 6. Home (hero, bienvenida, especialidades, horarios)
+@import 'home';
+
+// 7. Paginas internas (menu, nosotros, reservas, contacto)
+@import 'pages';

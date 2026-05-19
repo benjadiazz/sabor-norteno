@@ -1,0 +1,60 @@
+// =============================================
+// HEADER - Navbar y estilos de navegacion
+// =============================================
+
+.header {
+    .navbar {
+        background-color: rgba($color-dark, 0.95);
+        padding: 15px 0;
+        transition: background-color $transition-normal, padding $transition-normal;
+        backdrop-filter: blur(10px);
+
+        &-brand {
+            font-family: $font-heading;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $color-accent !important;
+
+            .brand-icon {
+                font-size: 1.3rem;
+            }
+        }
+
+        .nav-link {
+            color: $color-white !important;
+            font-weight: 500;
+            padding: 8px 16px !important;
+            position: relative;
+            transition: color $transition-fast;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background-color: $color-accent;
+                transition: width $transition-normal, left $transition-normal;
+            }
+
+            &:hover,
+            &.active {
+                color: $color-accent !important;
+
+                &::after {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border-color: rgba($color-accent, 0.5);
+
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.25);
+            }
+        }
+    }
+}

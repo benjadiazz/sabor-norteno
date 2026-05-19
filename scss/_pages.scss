@@ -1,0 +1,337 @@
+// =============================================
+// PAGES - Estilos compartidos de paginas internas
+// =============================================
+
+// Header de paginas internas
+.page-header {
+    position: relative;
+    height: 40vh;
+    min-height: 280px;
+    background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1920&h=600&fit=crop');
+    background-size: cover;
+    background-position: center;
+    @include flex-center;
+
+    &__overlay {
+        @include overlay(0.65);
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    &__title {
+        @include heading-style(3rem, 700);
+        color: $color-white;
+        animation: tracking-in-expand 0.7s ease-out;
+
+        @include responsive(md) {
+            font-size: 2rem;
+        }
+    }
+
+    &__subtitle {
+        color: rgba($color-white, 0.85);
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-top: $spacing-xs;
+    }
+}
+
+// Menu page
+.menu-section {
+    @extend %section-padding;
+
+    .menu-category {
+        margin-bottom: $spacing-lg;
+
+        &__title {
+            @include heading-style(1.6rem);
+            color: $color-primary;
+            padding-bottom: $spacing-xs;
+            border-bottom: 2px solid $color-accent;
+            margin-bottom: $spacing-md;
+
+            i {
+                margin-right: $spacing-xs;
+            }
+        }
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: $spacing-sm;
+        border-bottom: 1px dashed rgba($color-text, 0.15);
+        transition: background-color $transition-fast;
+
+        &:hover {
+            background-color: rgba($color-accent, 0.05);
+            border-radius: $radius-sm;
+        }
+
+        &__info {
+            flex: 1;
+            padding-right: $spacing-sm;
+        }
+
+        &__name {
+            font-family: $font-heading;
+            font-size: 1.1rem;
+            color: $color-dark;
+            margin-bottom: 4px;
+        }
+
+        &__desc {
+            font-size: 0.9rem;
+            color: $color-text-light;
+            margin: 0;
+        }
+
+        &__price {
+            font-family: $font-heading;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $color-primary;
+            white-space: nowrap;
+        }
+    }
+}
+
+// Nosotros page
+.nosotros-section {
+    @extend %section-padding;
+
+    &__img {
+        width: 100%;
+        border-radius: $radius-md;
+        box-shadow: $shadow-md;
+        transition: transform $transition-normal;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    p {
+        color: $color-text-light;
+        margin-bottom: $spacing-sm;
+        font-size: 1.05rem;
+    }
+}
+
+.valores {
+    margin-top: $spacing-lg;
+}
+
+.valor-card {
+    @include card-style;
+    padding: $spacing-md;
+    text-align: center;
+    margin-bottom: $spacing-md;
+
+    &__icon {
+        font-size: 2.5rem;
+        color: $color-accent;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__title {
+        font-family: $font-heading;
+        font-size: 1.2rem;
+        color: $color-dark;
+        margin-bottom: $spacing-xs;
+    }
+
+    &__text {
+        color: $color-text-light;
+        font-size: 0.95rem;
+    }
+}
+
+// Reservas page
+.reservas-section {
+    @extend %section-padding;
+}
+
+.reservas-info {
+    margin-bottom: $spacing-md;
+
+    p {
+        color: $color-text-light;
+        margin-bottom: $spacing-md;
+    }
+
+    &__details {
+        margin-bottom: $spacing-md;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-sm;
+
+        i {
+            font-size: 1.3rem;
+            color: $color-primary;
+            width: 30px;
+        }
+
+        span {
+            color: $color-text;
+        }
+    }
+
+    &__note {
+        display: flex;
+        gap: $spacing-sm;
+        padding: $spacing-sm;
+        background-color: rgba($color-accent, 0.1);
+        border-radius: $radius-sm;
+        border-left: 3px solid $color-accent;
+
+        i {
+            color: $color-accent;
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.reservas-form {
+    background-color: $color-white;
+    padding: $spacing-md;
+    border-radius: $radius-md;
+    box-shadow: $shadow-md;
+
+    .form-control,
+    .form-select {
+        border: 1px solid rgba($color-text, 0.15);
+        padding: 10px 14px;
+        border-radius: $radius-sm;
+        transition: border-color $transition-fast, box-shadow $transition-fast;
+
+        &:focus {
+            border-color: $color-primary;
+            box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.15);
+        }
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: $color-dark;
+        font-size: 0.9rem;
+    }
+}
+
+// Contacto page
+.contacto-section {
+    @extend %section-padding;
+}
+
+.contacto-info {
+    &__item {
+        display: flex;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-md;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $color-dark;
+            margin-bottom: 2px;
+        }
+
+        p {
+            color: $color-text-light;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    }
+
+    &__icon {
+        @include flex-center;
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        border-radius: 50%;
+        background-color: rgba($color-primary, 0.1);
+        color: $color-primary;
+        font-size: 1.2rem;
+    }
+}
+
+.contacto-redes {
+    margin-top: $spacing-md;
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__icons {
+        display: flex;
+        gap: $spacing-sm;
+
+        a {
+            @include flex-center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            color: $color-white;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all $transition-normal;
+
+            &:hover {
+                background-color: $color-accent;
+                color: $color-dark;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.contacto-form-wrapper {
+    background-color: $color-white;
+    padding: $spacing-md;
+    border-radius: $radius-md;
+    box-shadow: $shadow-md;
+    margin-bottom: $spacing-md;
+
+    .form-control {
+        border: 1px solid rgba($color-text, 0.15);
+        padding: 10px 14px;
+        border-radius: $radius-sm;
+        transition: border-color $transition-fast, box-shadow $transition-fast;
+
+        &:focus {
+            border-color: $color-primary;
+            box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.15);
+        }
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: $color-dark;
+        font-size: 0.9rem;
+    }
+}
+
+.contacto-mapa {
+    margin-top: $spacing-md;
+    border-radius: $radius-md;
+    overflow: hidden;
+    box-shadow: $shadow-sm;
+}

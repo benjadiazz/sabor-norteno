@@ -1,0 +1,84 @@
+// =============================================
+// FOOTER - Pie de pagina
+// =============================================
+
+.footer {
+    background-color: $color-dark;
+    color: $color-white;
+    padding: $spacing-lg 0 $spacing-sm;
+
+    &__title {
+        font-family: $font-heading;
+        font-size: 1.2rem;
+        color: $color-accent;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__text {
+        color: rgba($color-white, 0.7);
+        font-size: 0.9rem;
+    }
+
+    &__links {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: $spacing-xs;
+
+            a {
+                color: rgba($color-white, 0.7);
+                text-decoration: none;
+                transition: color $transition-fast;
+
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: $spacing-sm;
+
+        a {
+            @include flex-center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba($color-white, 0.1);
+            color: $color-white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all $transition-normal;
+
+            &:hover {
+                background-color: $color-accent;
+                color: $color-dark;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid rgba($color-white, 0.1);
+        margin-top: $spacing-md;
+        padding-top: $spacing-sm;
+        text-align: center;
+
+        p {
+            color: rgba($color-white, 0.5);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+    }
+
+    @include responsive(md) {
+        text-align: center;
+
+        &__social {
+            justify-content: center;
+        }
+    }
+}

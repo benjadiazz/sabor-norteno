@@ -1,0 +1,63 @@
+// =============================================
+// BASE - Estilos generales y reset
+// =============================================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-body;
+    color: $color-text;
+    background-color: $color-light;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+// Estilos generales de titulos de seccion
+.section-title {
+    @include heading-style(2rem);
+    margin-bottom: $spacing-md;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: $color-accent;
+        margin-top: $spacing-xs;
+    }
+
+    &.text-center::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Boton personalizado global
+.btn-custom {
+    @include button-style($color-primary, $color-white);
+}
+
+// Animacion de entrada para titulos
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+// Placeholder para secciones con padding uniforme
+%section-padding {
+    padding: $spacing-xl 0;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Sabor Norteño. Estamos en Av. San Martin 450, Salta Capital. Teléfono, WhatsApp y redes sociales.">
+    <meta name="keywords" content="contacto, dirección, teléfono, Salta, restaurante, ubicación, mapa">
+    <title>Contacto | Sabor Norteño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <span class="brand-icon">&#127798;</span> Sabor Norteño
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header__overlay"></div>
+            <div class="container">
+                <h1 class="page-header__title" data-aos="fade-up">Contacto</h1>
+                <p class="page-header__subtitle" data-aos="fade-up" data-aos-delay="100">Estamos para atenderte</p>
+            </div>
+        </section>
+
+        <section class="contacto-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <h2 class="section-title">Encontranos</h2>
+                        <div class="contacto-info">
+                            <div class="contacto-info__item">
+                                <div class="contacto-info__icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <h3>Dirección</h3>
+                                    <p>Av. San Martin 450<br>Salta Capital, Argentina</p>
+                                </div>
+                            </div>
+                            <div class="contacto-info__item">
+                                <div class="contacto-info__icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <h3>Teléfono</h3>
+                                    <p>(0387) 421-5678</p>
+                                </div>
+                            </div>
+                            <div class="contacto-info__item">
+                                <div class="contacto-info__icon">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h3>WhatsApp</h3>
+                                    <p>+54 387 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="contacto-info__item">
+                                <div class="contacto-info__icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>info@sabornorteno.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto-redes">
+                            <h3>Seguinos en redes</h3>
+                            <div class="contacto-redes__icons">
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="contacto-form-wrapper">
+                            <h2 class="section-title">Escribinos</h2>
+                            <form class="contacto-form" action="#" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactNombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="contactNombre" name="nombre" required placeholder="Tu nombre">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="contactEmail" name="email" required placeholder="tu@email.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactAsunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="contactAsunto" name="asunto" required placeholder="Motivo de tu consulta">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="contactMensaje" name="mensaje" rows="5" required placeholder="Escribi tu mensaje aca..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-custom">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                        <!-- Mapa -->
+                        <div class="contacto-mapa" data-aos="fade-up">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.123!2d-65.4117!3d-24.7883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ3JzE4LjAiUyA2NcKwMjQnNDIuMSJX!5e0!3m2!1ses!2sar!4v1" width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" title="Ubicación de Sabor Norteño en el mapa"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="footer__title">Sabor Norteño</h4>
+                    <p class="footer__text">Auténtica cocina del norte argentino desde 2018.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="footer__title">Enlaces</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="footer__title">Seguinos</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Sabor Norteño - Todos los derechos reservados | Desarrollado por Elias Benjamin Diaz Ale</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
